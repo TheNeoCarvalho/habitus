@@ -8,17 +8,27 @@
 
 /* Begin PBXBuildFile section */
 		932B5D6229B66D7100A97EE7 /* HabitusApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 932B5D6129B66D7100A97EE7 /* HabitusApp.swift */; };
-		932B5D6429B66D7100A97EE7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 932B5D6329B66D7100A97EE7 /* ContentView.swift */; };
 		932B5D6629B66D7600A97EE7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 932B5D6529B66D7600A97EE7 /* Assets.xcassets */; };
 		932B5D6929B66D7600A97EE7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 932B5D6829B66D7600A97EE7 /* Preview Assets.xcassets */; };
+		932B5D7429B66E7000A97EE7 /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 932B5D7329B66E7000A97EE7 /* SplashView.swift */; };
+		932B5D7629B66E9700A97EE7 /* SplashUIState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 932B5D7529B66E9700A97EE7 /* SplashUIState.swift */; };
+		93C02B3D29B67C6E00DBDBF5 /* SplashViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93C02B3C29B67C6E00DBDBF5 /* SplashViewModel.swift */; };
+		93D7A4DF29B7A0CE0046E430 /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93D7A4DE29B7A0CE0046E430 /* SignInView.swift */; };
+		93D7A4E129B7A0F80046E430 /* SignInViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93D7A4E029B7A0F80046E430 /* SignInViewModel.swift */; };
+		93D7A4E329B7A1E90046E430 /* SplashViewRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93D7A4E229B7A1E90046E430 /* SplashViewRouter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		932B5D5E29B66D7100A97EE7 /* Habitus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Habitus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		932B5D6129B66D7100A97EE7 /* HabitusApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitusApp.swift; sourceTree = "<group>"; };
-		932B5D6329B66D7100A97EE7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		932B5D6529B66D7600A97EE7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		932B5D6829B66D7600A97EE7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		932B5D7329B66E7000A97EE7 /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
+		932B5D7529B66E9700A97EE7 /* SplashUIState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashUIState.swift; sourceTree = "<group>"; };
+		93C02B3C29B67C6E00DBDBF5 /* SplashViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewModel.swift; sourceTree = "<group>"; };
+		93D7A4DE29B7A0CE0046E430 /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
+		93D7A4E029B7A0F80046E430 /* SignInViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewModel.swift; sourceTree = "<group>"; };
+		93D7A4E229B7A1E90046E430 /* SplashViewRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewRouter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +61,9 @@
 		932B5D6029B66D7100A97EE7 /* Habitus */ = {
 			isa = PBXGroup;
 			children = (
+				93D7A4DA29B7A0880046E430 /* SignIn */,
+				932B5D7029B66E3000A97EE7 /* Splash */,
 				932B5D6129B66D7100A97EE7 /* HabitusApp.swift */,
-				932B5D6329B66D7100A97EE7 /* ContentView.swift */,
 				932B5D6529B66D7600A97EE7 /* Assets.xcassets */,
 				932B5D6729B66D7600A97EE7 /* Preview Content */,
 			);
@@ -65,6 +76,74 @@
 				932B5D6829B66D7600A97EE7 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		932B5D7029B66E3000A97EE7 /* Splash */ = {
+			isa = PBXGroup;
+			children = (
+				93C02B3B29B67C4000DBDBF5 /* ViewModel */,
+				932B5D7229B66E5000A97EE7 /* View */,
+				932B5D7129B66E4B00A97EE7 /* Model */,
+			);
+			path = Splash;
+			sourceTree = "<group>";
+		};
+		932B5D7129B66E4B00A97EE7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				932B5D7529B66E9700A97EE7 /* SplashUIState.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		932B5D7229B66E5000A97EE7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				932B5D7329B66E7000A97EE7 /* SplashView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		93C02B3B29B67C4000DBDBF5 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				93C02B3C29B67C6E00DBDBF5 /* SplashViewModel.swift */,
+				93D7A4E229B7A1E90046E430 /* SplashViewRouter.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		93D7A4DA29B7A0880046E430 /* SignIn */ = {
+			isa = PBXGroup;
+			children = (
+				93D7A4DD29B7A0A90046E430 /* ViewModel */,
+				93D7A4DC29B7A0A30046E430 /* View */,
+				93D7A4DB29B7A09A0046E430 /* Model */,
+			);
+			path = SignIn;
+			sourceTree = "<group>";
+		};
+		93D7A4DB29B7A09A0046E430 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				93D7A4E029B7A0F80046E430 /* SignInViewModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		93D7A4DC29B7A0A30046E430 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				93D7A4DE29B7A0CE0046E430 /* SignInView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		93D7A4DD29B7A0A90046E430 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +216,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				932B5D6429B66D7100A97EE7 /* ContentView.swift in Sources */,
+				932B5D7629B66E9700A97EE7 /* SplashUIState.swift in Sources */,
 				932B5D6229B66D7100A97EE7 /* HabitusApp.swift in Sources */,
+				93D7A4E129B7A0F80046E430 /* SignInViewModel.swift in Sources */,
+				932B5D7429B66E7000A97EE7 /* SplashView.swift in Sources */,
+				93C02B3D29B67C6E00DBDBF5 /* SplashViewModel.swift in Sources */,
+				93D7A4E329B7A1E90046E430 /* SplashViewRouter.swift in Sources */,
+				93D7A4DF29B7A0CE0046E430 /* SignInView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
